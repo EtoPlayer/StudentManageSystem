@@ -1,0 +1,3 @@
+﻿  main.c
+E:\code\StudentManageSystem\StudentManageSystem\main.c(6,4): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+  StudentManageSystem.vcxproj -> E:\code\StudentManageSystem\StudentManageSystem\x64\Debug\StudentManageSystem.exe
