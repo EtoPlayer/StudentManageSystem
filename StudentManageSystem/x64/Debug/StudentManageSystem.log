@@ -1,3 +1,14 @@
 ﻿  main.c
-E:\code\StudentManageSystem\StudentManageSystem\main.c(6,4): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+E:\code\StudentManageSystem\StudentManageSystem\main.c(17,12): warning C4047: “函数”:“link”与“int”的间接级别不同
+E:\code\StudentManageSystem\StudentManageSystem\main.c(17,11): warning C4024: “input”: 形参和实参 1 的类型不同
+E:\code\StudentManageSystem\StudentManageSystem\main.c(20,10): warning C4047: “函数”:“link”与“int”的间接级别不同
+E:\code\StudentManageSystem\StudentManageSystem\main.c(20,9): warning C4024: “del”: 形参和实参 1 的类型不同
+E:\code\StudentManageSystem\StudentManageSystem\main.c(23,11): warning C4047: “函数”:“link”与“int”的间接级别不同
+E:\code\StudentManageSystem\StudentManageSystem\main.c(23,10): warning C4024: “list”: 形参和实参 1 的类型不同
+E:\code\StudentManageSystem\StudentManageSystem\main.c(26,13): warning C4047: “函数”:“link”与“int”的间接级别不同
+E:\code\StudentManageSystem\StudentManageSystem\main.c(26,12): warning C4024: “search”: 形参和实参 1 的类型不同
+E:\code\StudentManageSystem\StudentManageSystem\main.c(29,11): warning C4047: “函数”:“link”与“int”的间接级别不同
+E:\code\StudentManageSystem\StudentManageSystem\main.c(29,10): warning C4024: “Save”: 形参和实参 1 的类型不同
+E:\code\StudentManageSystem\StudentManageSystem\main.c(32,11): warning C4047: “函数”:“link”与“int”的间接级别不同
+E:\code\StudentManageSystem\StudentManageSystem\main.c(32,10): warning C4024: “load”: 形参和实参 1 的类型不同
   StudentManageSystem.vcxproj -> E:\code\StudentManageSystem\StudentManageSystem\x64\Debug\StudentManageSystem.exe

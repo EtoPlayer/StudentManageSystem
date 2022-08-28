@@ -23,8 +23,12 @@ typedef struct node {
 } Node, * link; 
 
 // º¯Êý
-int MenuSelect();
-void input(link l);
-void Save(link l);
-void load(link l);
+extern int MenuSelect();
+extern void input(link l);
+extern void Save(link l);
+extern void load(link l);
+extern void list(link l);
+extern void display(Node* p);
+extern void search(link l);
+extern void del(link l);
 

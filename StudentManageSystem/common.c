@@ -47,9 +47,9 @@ void input(link l)
 		}
 
 		printf("name:");
-		scanf_s("%d", &p->data.name);
+		scanf_s("%c", &p->data.name);
 		printf("sex:");
-		scanf_s("%d", &p->data.sex);
+		scanf_s("%c", &p->data.sex);
 		printf("age:");
 		scanf_s("%d", &p->data.age);
 
@@ -115,4 +115,85 @@ void load(link l)
 			r = p;
 		}
 	}
+}
+
+void list(link l)
+{
+	Node* p;
+	p = l->next;
+
+	if (p == NULL) {
+		printf("no student record!");
+	}
+
+	while (p != NULL) {
+		display(p);
+		p = p->next;
+	}
+
+	getch();
+}
+
+void display(Node *p)
+{
+	printf("STUDENT INFORMATION\n");
+	printf("number:%d\n", p->data.num);
+	printf("name:%s\n", p->data.name);
+	printf("sex:%s\n", p->data.sex);
+	printf("age:%d\n", p->data.age);
+	printf("Chinese:%lf\n", p->data.score[0]);
+	printf("Math:%lf\n", p->data.score[1]);
+	printf("English:%lf\n", p->data.score[2]);
+	printf("sum:%lf\n", p->data.sum);
+	printf("average:%lf\n", p->data.ave);
+}
+
+void search(link l)
+{
+	int num;
+	Node* p;
+	p = l->next;
+
+	printf("input number of the student:\n");
+	scanf("%d", &num);
+	while (p) {
+		if (p->data.num == num) {
+			display(p);
+			getch();
+			break;
+		}
+		p = p->next;
+	}
+	if (p == NULL) {
+		printf("can not find the student!");
+	}
+}
+
+void del(link l)
+{
+	int num;
+	Node* p, *q;
+	q = l;
+	p = q->next;
+
+	printf("please input the student number you want to delete:\n");
+	scanf("%d", &num);
+
+	while (p) {
+		if (p->data.num == num) {
+			q->next = p->next;
+			free(p);
+			printf("delete successfully!\n");
+			break;
+		} else {
+			q = p;
+			p = q->next;
+		}
+	}
+
+	if (p == NULL) {
+		printf("can not find the student!");
+	}
+
+	getch();
 }

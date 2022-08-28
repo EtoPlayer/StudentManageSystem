@@ -3,13 +3,13 @@
 int main()
 {
 	link l = NULL;
-	l == (Node*)malloc(sizeof(Node));
+	l = (Node*)malloc(sizeof(Node));
 
 	if (l == NULL) {
 		printf("\n failure");
 		return 0;
 	}
-/*
+
 	while (1) {
 		system("cls");
 		switch (MenuSelect()) {
@@ -26,7 +26,7 @@ int main()
 				search(1);
 				break;
 			case 5:
-				save(1);
+				Save(1);
 				break;
 			case 6:
 				load(1);
@@ -36,6 +36,6 @@ int main()
 				break;
 		}
 	}
-*/
+
 	return 0;
 }
